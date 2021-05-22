@@ -88,8 +88,8 @@ class Window(QMainWindow,Ui_Smartdog):
         self.checkBox_SiamrpnR1.setChecked(False)
         self.checkBox_SiamrpnR2.setChecked(False)
         self.checkBox_SiamrpnR3.setChecked(False)
-        self.config_path = './models/siammask_r50_l3/config.yaml'           # 配置config文件
-        self.snapshot_path = './models/siammask_r50_l3/model.pth'           # 配置snapshot 文件
+        self.config_path = '../models/siammask_r50_l3/config.yaml'           # 配置config文件
+        self.snapshot_path = '../models/siammask_r50_l3/model.pth'           # 配置snapshot 文件
         if self.checkBox_Siammask.isChecked() is True:
             self.textBws_show_process.append('已选择SiamMask_r50_l3模型!')
         else:
@@ -104,8 +104,8 @@ class Window(QMainWindow,Ui_Smartdog):
         self.checkBox_SiamrpnR1.setChecked(False)
         self.checkBox_SiamrpnR2.setChecked(False)
         self.checkBox_SiamrpnR3.setChecked(False)
-        self.config_path = './models/siamrpn_alex_dwxcorr/config.yaml'  # 配置config文件
-        self.snapshot_path = 'models/siamrpn_alex_dwxcorr/model.pth'  # 配置snapshot 文件
+        self.config_path = '../models/siamrpn_alex_dwxcorr/config.yaml'  # 配置config文件
+        self.snapshot_path = '../models/siamrpn_alex_dwxcorr/model.pth'  # 配置snapshot 文件
         if self.checkBox_SiamrpnA1.isChecked() is True:
             self.textBws_show_process.append('已选择siamrpn_alex_dwxcorr模型!')
         else:
@@ -121,8 +121,8 @@ class Window(QMainWindow,Ui_Smartdog):
         self.checkBox_SiamrpnR1.setChecked(False)
         self.checkBox_SiamrpnR2.setChecked(False)
         self.checkBox_SiamrpnR3.setChecked(False)
-        self.config_path = './models/siamrpn_alex_dwxcorr_otb/config.yaml'  # 配置config文件
-        self.snapshot_path = 'models/siamrpn_alex_dwxcorr_otb/model.pth'  # 配置snapshot 文件
+        self.config_path = '../models/siamrpn_alex_dwxcorr_otb/config.yaml'  # 配置config文件
+        self.snapshot_path = '../models/siamrpn_alex_dwxcorr_otb/model.pth'  # 配置snapshot 文件
         if self.checkBox_SiamrpnA2.isChecked() is True:
             self.textBws_show_process.append('已选择siamrpn_alex_dwxcorr_otb模型!')
         else:
@@ -138,8 +138,8 @@ class Window(QMainWindow,Ui_Smartdog):
         self.checkBox_SiamrpnR1.setChecked(False)
         self.checkBox_SiamrpnR2.setChecked(False)
         self.checkBox_SiamrpnR3.setChecked(False)
-        self.config_path = './models/siamrpn_mobilev2_l234_dwxcorr/config.yaml'  # 配置config文件
-        self.snapshot_path = 'models/siamrpn_mobilev2_l234_dwxcorr/model.pth'  # 配置snapshot 文件
+        self.config_path = '../models/siamrpn_mobilev2_l234_dwxcorr/config.yaml'  # 配置config文件
+        self.snapshot_path = '../models/siamrpn_mobilev2_l234_dwxcorr/model.pth'  # 配置snapshot 文件
         if self.checkBox_SiamrpnM.isChecked() is True:
             self.textBws_show_process.append('已选择siamrpn_mobilev2_l234_dwxcorr模型!')
         else:
@@ -155,8 +155,8 @@ class Window(QMainWindow,Ui_Smartdog):
         self.checkBox_SiamrpnM.setChecked(False)
         self.checkBox_SiamrpnR2.setChecked(False)
         self.checkBox_SiamrpnR3.setChecked(False)
-        self.config_path = './models/siamrpn_r50_l234_dwxcorr/config.yaml'  # 配置config文件
-        self.snapshot_path = 'models/siamrpn_r50_l234_dwxcorr/model.pth'  # 配置snapshot 文件
+        self.config_path = '../models/siamrpn_r50_l234_dwxcorr/config.yaml'  # 配置config文件
+        self.snapshot_path = '../models/siamrpn_r50_l234_dwxcorr/model.pth'  # 配置snapshot 文件
         if self.checkBox_SiamrpnR1.isChecked() is True:
             self.textBws_show_process.append('已选择siamrpn_r50_l234_dwxcorr模型!')
         else:
@@ -172,8 +172,8 @@ class Window(QMainWindow,Ui_Smartdog):
         self.checkBox_SiamrpnM.setChecked(False)
         self.checkBox_SiamrpnR1.setChecked(False)
         self.checkBox_SiamrpnR3.setChecked(False)
-        self.config_path = './models/siamrpn_r50_l234_dwxcorr_lt/config.yaml'  # 配置config文件
-        self.snapshot_path = 'models/siamrpn_r50_l234_dwxcorr_lt/model.pth'  # 配置snapshot 文件
+        self.config_path = '../models/siamrpn_r50_l234_dwxcorr_lt/config.yaml'  # 配置config文件
+        self.snapshot_path = '../models/siamrpn_r50_l234_dwxcorr_lt/model.pth'  # 配置snapshot 文件
         if self.checkBox_SiamrpnR2.isChecked() is True:
             self.textBws_show_process.append('已选择siamrpn_r50_l234_dwxcorr模型!')
         else:
@@ -188,8 +188,8 @@ class Window(QMainWindow,Ui_Smartdog):
         self.checkBox_SiamrpnM.setChecked(False)
         self.checkBox_SiamrpnR1.setChecked(False)
         self.checkBox_SiamrpnR2.setChecked(False)
-        self.config_path = './models/siamrpn_r50_l234_dwxcorr_otb/config.yaml'  # 配置config文件
-        self.snapshot_path = 'models/siamrpn_r50_l234_dwxcorr_otb/model.pth'  # 配置snapshot 文件
+        self.config_path = '../models/siamrpn_r50_l234_dwxcorr_otb/config.yaml'  # 配置config文件
+        self.snapshot_path = '../models/siamrpn_r50_l234_dwxcorr_otb/model.pth'  # 配置snapshot 文件
         if self.checkBox_SiamrpnR3.isChecked() is True:
             self.textBws_show_process.append('已选择siamrpn_r50_l234_dwxcorr模型!')
         else:
