@@ -39,7 +39,7 @@
        <string notr="true"/>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
-       <item row="1" column="0">
+       <item row="0" column="0">
         <widget class="QLabel" name="label_show">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -65,115 +65,6 @@
          <property name="text">
           <string/>
          </property>
-        </widget>
-       </item>
-       <item row="0" column="0">
-        <widget class="QGroupBox" name="groupBox_2">
-         <property name="minimumSize">
-          <size>
-           <width>900</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>16777215</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>宋体</family>
-           <pointsize>12</pointsize>
-          </font>
-         </property>
-         <property name="title">
-          <string>跟踪方式</string>
-         </property>
-         <layout class="QGridLayout" name="gridLayout">
-          <item row="0" column="0">
-           <spacer name="horizontalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="0" column="1">
-           <widget class="QPushButton" name="btn_open_camera">
-            <property name="minimumSize">
-             <size>
-              <width>220</width>
-              <height>80</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>220</width>
-              <height>80</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>摄像头跟踪</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="2">
-           <spacer name="horizontalSpacer">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>163</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="0" column="3">
-           <widget class="QPushButton" name="btn_open_video">
-            <property name="minimumSize">
-             <size>
-              <width>220</width>
-              <height>80</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>220</width>
-              <height>80</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>视频文件跟踪</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="4">
-           <spacer name="horizontalSpacer_3">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>164</width>
-              <height>17</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-         </layout>
-         <zorder>horizontalSpacer_3</zorder>
-         <zorder>btn_open_camera</zorder>
-         <zorder>btn_open_video</zorder>
-         <zorder>horizontalSpacer_2</zorder>
-         <zorder>horizontalSpacer</zorder>
         </widget>
        </item>
       </layout>

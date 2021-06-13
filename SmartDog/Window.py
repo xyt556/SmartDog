@@ -40,6 +40,7 @@ class Window(QMainWindow, Ui_Smartdog):
         self.setSlots()
         self.load_track_algo()
         self.init_track()
+        self.slot_press_camera()
 
     def initui(self):
         self.width = self.label_show.width()
@@ -49,8 +50,8 @@ class Window(QMainWindow, Ui_Smartdog):
 
     def setSlots(self):
         self.btn_select_target.clicked.connect(self.slot_press_select_roi)
-        self.btn_open_camera.clicked.connect(self.slot_press_camera)
-        self.btn_open_video.clicked.connect(self.slot_press_video)
+        # self.btn_open_camera.clicked.connect(self.slot_press_camera)
+        # self.btn_open_video.clicked.connect(self.slot_press_video)
         self.btn_track_over.clicked.connect(self.slot_press_over)
         self.btn_track_start.clicked.connect(self.slot_press_track)
 
@@ -62,8 +63,8 @@ class Window(QMainWindow, Ui_Smartdog):
 
     def openPushBottom(self, select_target=False, camera=False, video=False, over=False, track=False):
         self.btn_select_target.setEnabled(True) if select_target is True else self.btn_select_target.setEnabled(False)
-        self.btn_open_camera.setEnabled(True) if camera is True else self.btn_open_camera.setEnabled(False)
-        self.btn_open_video.setEnabled(True) if video is True else self.btn_open_video.setEnabled(False)
+        # self.btn_open_camera.setEnabled(True) if camera is True else self.btn_open_camera.setEnabled(False)
+        # self.btn_open_video.setEnabled(True) if video is True else self.btn_open_video.setEnabled(False)
         self.btn_track_over.setEnabled(True) if over is True else self.btn_track_over.setEnabled(False)
         self.btn_track_start.setEnabled(True) if track is True else self.btn_track_start.setEnabled(False)
 
@@ -131,7 +132,6 @@ class Window(QMainWindow, Ui_Smartdog):
 
     def slot_press_track(self):
         if self.open_keyboard_flag is False:
-            self.openPushBottom(over=True)
             self.target_rect = self.transformrect(self.label_show.rect)
             self.textBws_show_process.append('Target box format transcoding...')
             init_rect = tuple(self.target_rect)
@@ -144,10 +144,11 @@ class Window(QMainWindow, Ui_Smartdog):
             self.tracker_timer.timeout.connect(self.slot_track_process)
             self.tracker_timer.start(self.FPS)
             self.textBws_show_process.append('The target has been selected.')
+            self.openPushBottom(over=True)
 
     def slot_press_over(self):
         self.clear_label()
-        self.openPushBottom(video=True, camera=True)
+        # self.openPushBottom(video=True, camera=True)
         if self.open_camera_flag is True:
             self.camera_timer.stop()
             self.camera.release()
@@ -169,6 +170,7 @@ class Window(QMainWindow, Ui_Smartdog):
         self.textBws_show_process.append('The trace thread has been destroy.')
         self.textBws_show_process.append('The tracking interface has been cleaned up.')
         self.textBws_show_process.append('The track has over.')
+        self.slot_press_camera()
 
     def slot_camera_show_image(self):
         if self.open_camera_flag is True:
